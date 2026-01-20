@@ -63,7 +63,7 @@ export function operationStraighten(context, selectedIDs) {
             )) return null;
 
             if (_nodeIDs.length) {
-                // If we're only straightenting between two points, we only need that extent visible
+                // If we're only straightening between two points, we only need that extent visible
                 _extent = utilTotalExtent(_nodeIDs, context.graph());
             }
 

@@ -886,7 +886,7 @@ function validationCache(which) {
   };
 
 
-  // Return the expandeded set of entityIDs related to issues for the given entityIDs
+  // Return the expanded set of entityIDs related to issues for the given entityIDs
   //
   // Arguments
   //   `entityIDs` - Array or Set containing entityIDs.
