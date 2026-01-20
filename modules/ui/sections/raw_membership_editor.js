@@ -604,7 +604,7 @@ export function uiSectionRawMembershipEditor(context) {
                 cancelEntity();
                 return;
             }
-            // remove hover-higlighting
+            // remove hover-highlighting
             if (d.relation) utilHighlightEntities([d.relation.id], false, context);
 
             var role = context.cleanRelationRole(list.selectAll('.member-row-new .member-role').property('value'));
@@ -616,7 +616,7 @@ export function uiSectionRawMembershipEditor(context) {
             var input = newMembership.selectAll('.member-entity-input');
             input.property('value', '');
 
-            // remove hover-higlighting
+            // remove hover-highlighting
             context.surface().selectAll('.highlighted')
                 .classed('highlighted', false);
         }

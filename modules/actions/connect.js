@@ -8,7 +8,7 @@ import { utilArrayUniq, utilOldestID } from '../util';
 // First choose a node to be the survivor, with preference given
 // to the oldest existing (not new) and "interesting" node.
 //
-// Tags and relation memberships of of non-surviving nodes are merged
+// Tags and relation memberships of non-surviving nodes are merged
 // to the survivor.
 //
 // This is the inverse of `iD.actionDisconnect`.

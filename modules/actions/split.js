@@ -140,7 +140,7 @@ export function actionSplit(nodeIds, newWayIds) {
         for (const key in wayA.tags) {
             if (!osmSummableTags.has(key)) continue;
 
-            // divide up the the e.g. step count proportionally between the two ways
+            // divide up to the e.g. step count proportionally between the two ways
             var count = Number(wayA.tags[key]);
             if (count &&
                 // ensure a number
@@ -491,7 +491,7 @@ export function actionSplit(nodeIds, newWayIds) {
                         }
                     }
                 }
-                const relTypesExceptions = ['junction', 'enforcement']; // some relation types should not prehibit a member from being split
+                const relTypesExceptions = ['junction', 'enforcement']; // some relation types should not prohibit a member from being split
                 if (circularJunctions.includes(way.tags.junction) &&
                     way.isClosed() &&
                     !relTypesExceptions.includes(parentRelation.tags.type)) {
